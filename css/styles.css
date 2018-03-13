@@ -1,0 +1,9 @@
+body {
+  background-color: #e0d382;
+}
+nav {
+  background-color: #cfc271;
+}
+.jumbotron {
+  background-image: url("images/bg.jpg");
+}

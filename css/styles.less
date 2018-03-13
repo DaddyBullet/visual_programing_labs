@@ -1,0 +1,52 @@
+@bg-color: #e0d382;
+@nav-color: @bg-color - #111;
+@bg-image: url("images/bg.jpg");
+
+body{
+  background-color: @bg-color;
+  margin-bottom: 0px;
+}
+
+nav{
+  background-color: @nav-color;
+}
+
+#right-content-list{
+  .list-group{
+    margin-bottom: 20px;
+    .list-group-item{
+        background-color: @bg-color;
+        // border: 0px;
+    }
+  }
+}
+
+.jumbotron{
+  background-image: @bg-image;
+  margin-bottom: 0;
+}
+
+.tz-gallery {
+    padding: 20px;
+    .lightbox img {
+        width: 100%;
+        margin-bottom: 10px;
+        transition: 0.2s ease-in-out;
+        box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+        }
+    }
+    img {
+        border-radius: 4px;
+    }
+}
+
+.footer {
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  min-height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: @nav-color;
+}
